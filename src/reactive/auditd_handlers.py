@@ -16,5 +16,5 @@ def install_auditd():
 def config_changed():
     status_set('maintenance', 'Updating auditd configuration')
     write_configs()
-    restart_auditd()
+    update_grub()
     status_set('active', 'Unit is ready.')
