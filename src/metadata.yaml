@@ -1,0 +1,12 @@
+name: auditd
+summary: CIS compliant auditd configuration for Juju workloads.
+maintainer: Michael Skalka <Michael.Skalka@canonical.com>
+description: |
+  Installs and configures auditd in a Juju deployed node.
+tags:
+  - security
+subordinate: true
+provides:
+  juju-info:
+    interface: juju-info
+    scope: container
